@@ -1,0 +1,1 @@
+KNN-based recommendation system that recommends movies to users based on their preferences and similar users’ choices.
