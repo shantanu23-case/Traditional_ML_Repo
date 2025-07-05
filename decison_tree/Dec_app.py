@@ -30,6 +30,8 @@ movie_features.columns = ['moviesID','avg_Rating','rating_count']
 ##-->Merge kr rae hai movies feature mein movies.
 
 movie_features=movie_features.merge(movies[['movieId', 'genres']], on='movieId')
+movie_features['main_genre'] = movie_features['genres'].apply(lambda x: x.split('|')[0])
+
 # movies[['movieId', 'genres']]
 # This selects just movieId and genres columns from the movies DataFrame.
 # on='movieId'
