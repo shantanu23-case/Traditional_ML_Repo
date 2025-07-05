@@ -60,3 +60,48 @@ Feature Prep	Avg rating, rating count banaya
 Label Encode	Genre ko numbers mein convert kiya
 Model Train	Decision Tree use kiya
 Predict & Evaluate	Accuracy check kiya & test movie pe prediction kiya
+
+------------------------------------------------------------------------------------
+
+A Decision Tree is like a flowchart:
+
+🌿 Branch: is a decision/split based on a feature (e.g., avg_rating > 4.0?)
+
+🍁 Leaf Node: is the final prediction (e.g., genre = "Action")
+
+You don’t see branches and leaves directly in the code, but they are created when you call:
+
+python
+Copy
+Edit
+model.fit(X_train, y_train)
+🔍 Your Code:
+python
+Copy
+Edit
+model = DecisionTreeClassifier(max_depth=5, random_state=42)
+model.fit(X_train, y_train)
+📌 This is the point where:
+
+The tree is constructed
+
+Branches are based on avg_rating, rating_count, etc.
+
+Leaf nodes are where final genre_label is assigned
+
+But the structure is hidden inside the model object.
+
+🌿🍁 Example Tree (Conceptual):
+Let’s imagine how the Decision Tree might look for your movie example:
+
+yaml
+Copy
+Edit
+Is avg_rating > 3.9?
+├── Yes → Is rating_count > 800?
+│   ├── Yes → 🎯 Predict: Action
+│   └── No  → 🎯 Predict: Drama
+└── No  → 🎯 Predict: Comedy
+avg_rating and rating_count are used as split rules (branches)
+
+The final genre prediction is at the leaves
