@@ -71,14 +71,8 @@ A Decision Tree is like a flowchart:
 
 You don’t see branches and leaves directly in the code, but they are created when you call:
 
-python
-Copy
-Edit
 model.fit(X_train, y_train)
 🔍 Your Code:
-python
-Copy
-Edit
 model = DecisionTreeClassifier(max_depth=5, random_state=42)
 model.fit(X_train, y_train)
 📌 This is the point where:
@@ -94,9 +88,6 @@ But the structure is hidden inside the model object.
 🌿🍁 Example Tree (Conceptual):
 Let’s imagine how the Decision Tree might look for your movie example:
 
-yaml
-Copy
-Edit
 Is avg_rating > 3.9?
 ├── Yes → Is rating_count > 800?
 │   ├── Yes → 🎯 Predict: Action
