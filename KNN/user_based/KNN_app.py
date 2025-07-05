@@ -30,7 +30,13 @@ model = KNeighborsClassifier(metric="cosine",algorithm="brute")
 # Brute = match each warrior against every other to find the most similar ones.
 model.fit(user_movie_matrix)
 distances, indices = model.kneighbors(user_movie_matrix.iloc[0:1], n_neighbors=3)
-
+#Finds the 3 most similar movies to the first movie in user_movie_matrix.
+#iloc[0:1] selects the first movie row (as a DataFrame).
+#A DataFrame is a 2-dimensional table-like structure provided by the pandas library in Python.
+#Think of it like an Excel sheet or a SQL table
+# kneighbors() returns:
+# distances: how far (or dissimilar) each neighbor is
+# indices: the row positions (not IDs) of the similar movies
 #>>>>>>>>>>>>> Why We Don't Use Cross-Validation in User-Based KNN >>>>>>>>>>>
 
 #User-based KNN (a memory-based) is not a supervised learning model like regression or classification. So:
