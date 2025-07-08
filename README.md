@@ -7,6 +7,16 @@ A repository demonstrating classic machine learning algorithms—**KNN** and **R
 ## Overview
 
 This project explores:
+What is Supervised Learning?
+A type of machine learning where the model is trained using labeled data — that means input (X) is provided along with the correct output (y).
+
+Labeled data ?
+Labeled data woh data hota hai jisme input ke saath output bhi diya hota hai.
+Tumhare paas sirf features (X) nahi, balki uska correct answer (y) bhi hota hai
+
+Family of Supervised Learning contains these models -
+![Alt Text](model_supervised.png)
+
 
 1. **K-Nearest Neighbors (KNN)**  
    - **Classifier**: Predict whether a user *likes* a movie (rating ≥ 4)  
@@ -16,13 +26,11 @@ This project explores:
    - **Classifier**: Same like/dislike binary task  
    - **Regressor**: Predict exact rating value
 
-You'll learn classic supervised machine learning pipeline steps:
-- Data preparation  
-- Feature engineering  
-- Train/test splitting  
-- Model training  
-- Evaluation metrics: accuracy (for classifiers) and MSE (for regressors)
+3. **Decision tree**  
+   - **Classifier**: Same like/dislike binary task  
+   - **Regressor**: Predict exact rating value
 
+Evaluation metrics: accuracy (for classifiers) and MSE (for regressors)
 ---
 
 ## Getting Started
