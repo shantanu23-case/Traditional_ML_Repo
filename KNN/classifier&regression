@@ -1,0 +1,24 @@
+🔷 KNN Classifier (Classification)
+🧠 Kaam: Bataata hai ki cheez kis category mein aati hai.
+
+📌 Example:
+Tumhare paas kuch logon ka data hai – unka age aur salary, aur pata hai ki kaun product khareedta hai aur kaun nahi.
+
+Ab agar koi naya aadmi aaye, toh KNN nearby (sabse paas ke) logon ko dekhega aur vote karega:
+
+Agar 3 mein se 2 ne product khareeda hai → prediction: ye bhi khareedega (label = 1)
+
+✅ Output: Yes/No, 0/1, Dog/Cat, etc.
+
+🔷 KNN Regressor (Regression)
+🧠 Kaam: Koi number value predict karta hai.
+
+📌 Example:
+Tumhare paas gharon ka data hai – size aur bedrooms, aur unka price.
+Ab tum kisi naye ghar ka price predict karna chahte ho.
+
+KNN nearby gharon ka price dekhega, unka average lega:
+
+(80 lakh + 90 lakh) / 2 = 85 lakh → prediction
+
+✅ Output: ₹85,00000, temperature, height, etc.
